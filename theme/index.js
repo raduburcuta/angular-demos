@@ -3,7 +3,6 @@ export {bytexTheme} from './bytex-theme';
 
 import React from 'react';
 
-
 export const Provider = ({children}) => (
     <div
         style={{
