@@ -1,11 +1,70 @@
-export { future as theme } from 'mdx-deck/themes'
+export { default as theme } from 'mdx-deck/themes'
 import { CodeSurfer } from "mdx-deck-code-surfer"
 import { Image } from 'mdx-deck'
 
 
-<img src='./src/assets/logo.png' />
+<img src='./src/assets/fii-practic.jpeg' />
 
-### Session IT should be fun - angular #3 Components & templates #2
+### Angular
+
+<img src='./src/assets/bytex_logo_v1.png' />
+---
+
+### `What is a Component ?`
+---
+
+Components are the most basic UI building block of an Angular app. An Angular app contains a tree of Angular components.
+
+---
+
+### `Who can I display data ?`
+
+---
+
+You can display data by binding controls in an HTML template to properties of an Angular component.
+
+---
+
+<CodeSurfer
+title="Interpolation"
+dark="false"
+code={require("raw-loader!./src/app/demos/life-cycle-hooks.ts")}
+steps={[
+  {range: [11, 17]},
+]}
+/>
+---
+
+### `Updating them`
+Angular executes template expressions after every change detection cycle. Change detection cycles are triggered by many asynchronous activities such as promise resolutions, HTTP results, timer events, key presses and mouse moves.
+
+---
+
+
+### `About best practices:`
+Although it's possible to write complex template expressions, it's a better practice to avoid them.
+
+---
+
+### `But what are template statements ?`
+A template statement has a side effect. That's the whole point of an event. It's how you update application state from user action.
+
+---
+
+<img src='./src/assets/statements.png' />
+
+---
+
+<div>
+  <img src='./src/assets/data-flow.png' width="900px"/>
+</div>
+
+---
+
+### `Angular has Built-in directives.`
+NgClass ----
+NgStyle ----
+NgModel - two-way data binding to an HTML form element
 
 ---
 
@@ -20,21 +79,22 @@ Angular offers lifecycle hooks that provide visibility into these key life momen
 ---
 <CodeSurfer
 title="Hooks Component"
-dark="true"
+dark="false"
 code={require("raw-loader!./src/app/demos/life-cycle-hooks.ts")}
 steps={[
-  {range: [17, 22], notes: "Hooks implementation."},
-  {range: [31, 36], notes: "OnChanges"},
-  {range: [36, 41], notes: "ngOnInit"},
-  {range: [41, 59], notes: "All others"},
-  {range: [57, 59], notes: "OnDestroy"},
+  {range: [19, 25], notes: "Hooks implementation."},
+  {range: [27, 33], notes: "Constructor (not a lifecycle hook)"},
+  {range: [33, 38], notes: "OnChanges"},
+  {range: [38, 43], notes: "ngOnInit"},
+  {range: [44, 59], notes: "All others"},
+  {range: [59, 62], notes: "OnDestroy"},
 ]}
 />
 
 ---
 <CodeSurfer
 title="AfterViewInit Component"
-dark="true"
+dark="false"
 code={require("raw-loader!./src/app/demos/after-view-init.ts")}
 steps={[
   {range: [37, 53], notes: "AfterViewInit hook."}
@@ -54,7 +114,7 @@ Use ``@Output decorator``.
 ---
 <CodeSurfer
 title="Component Interaction"
-dark="true"
+dark="false"
 code={require("raw-loader!./src/app/demos/after-view-init.ts")}
 steps={[
   {range: [18, 28], notes: "Input, Output and 2 more."},
@@ -65,14 +125,14 @@ steps={[
 ---
 <CodeSurfer
 title="Parent and children communicate via a service."
-dark="true"
+dark="false"
 code={require("raw-loader!./src/app/demos/component-interaction.service.ts")}
 />
 
 ---
 <CodeSurfer
 title="Component that subscribes."
-dark="true"
+dark="false"
 code={require("raw-loader!./src/app/demos/component-interaction.ts")}
 />
 
@@ -102,4 +162,4 @@ How ?
 
 ---
 
-# `Va multumesc`
+# `Va multumim!`

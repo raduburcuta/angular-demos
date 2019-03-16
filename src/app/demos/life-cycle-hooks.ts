@@ -8,7 +8,9 @@ import {
 
 @Component({
   selector: 'app-peek-a-boo',
-  template: `<p>Now you see my hero, {{name}}</p>
+  template: `<p>Name: {{name}}, a: {{getAge()}}, w: {{ 20 + 20}}
+      <app-inner-comp [property]="value"> </app-inner-comp>
+    </p>
     <div *ngFor="let msg of hookLog">{{msg}}</div>
   `,
   styles: ['p {background: LightYellow; padding: 8px}']
