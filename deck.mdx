@@ -148,4 +148,77 @@ How ?
 
 ---
 
+## `Pipes`
+A pipe takes in data as input and transforms it to a desired output
+
+---
+
+<CodeSurfer
+title="Pipes"
+dark="true"
+code={require("raw-loader!./src/app/pipes/even.pipe.ts")}
+steps={[
+  {range: [2, 6], notes: "Input decorator"},
+  {range: [4, 4], notes: "Pipe name"},
+  {range: [5, 5], notes: 'Use impure pipes in very special cases'},
+  {range: [7, 7], notes: ''},
+  {range: [8, 10], notes: ''},
+]}
+/>
+
+---
+
+<CodeSurfer
+title="Use the pipe"
+dark="true"
+code={require("raw-loader!./src/app/components/even-component/even.component.ts")}
+steps={[
+  {range: [9, 9], notes: ''},
+]}
+/>
+
+---
+
+<CodeSurfer
+title="Use the pipe"
+dark="true"
+code={require("raw-loader!./src/app/components/even-component/even.component.html")}
+steps={[
+  {range: [2, 3], notes: 'The even values will be displayed'},
+  {range: [5, 6], notes: 'The odd values will be displayed'},
+]}
+/>
+
+---
+
+## `Structural directives`
+
+---
+
+<CodeSurfer
+title="Structural Directives"
+dark="true"
+code={require("raw-loader!./src/app/components/structural-directives/structural-directive.component.html")}
+steps={[
+  {range: [1, 7], notes: 'ngIf is used for displaing or not elements in page'},
+  {range: [3, 3], notes: ''},
+  {range: [5, 5], notes: ''},
+  {range: [9, 15], notes: ''},
+  {range: [17, 22], notes: ''},
+  {range: [24, 30], notes: 'Cum puteti comunica cu o componenta si invers'},
+  {range: [26, 26], notes: ''},
+  {range: [28, 28], notes: ''},
+  {range: [32, 32], notes: ''},
+  {range: [33, 33], notes: ''},
+  {range: [36, 36], notes: ''},
+]}
+/>
+
+---
+
+# Services && Routing
+Let's see that in practice
+
+---
+
 # `Va multumim!`
